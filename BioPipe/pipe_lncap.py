@@ -14,6 +14,8 @@ import common.zscorerunner as zscorerunner
 #import gtfgffcomparison.compare as comparegtfgff
 import common.gffgtfcompare as gtfgff
 
+import pybedtools
+
 FILEINPUTSEQS1 = "seq_AR.fasta"
 FILEINPUTSEQS2 = "seq_IGG.fasta"
 KMERSIZE = 2
@@ -24,6 +26,7 @@ KMEROUTPUTFILE = "outputs/kmer-output.csv"
 OUTPUTSVMFILE = "outputs/svm-output.csv"
 GTFFILE = "/sharedfolder/BioInfo/DadosPaper/merged-novo-m2.gtf"
 OUTPUTBEDFILE = "outputs/bed_file_01.bed"
+HG19FILE = ""
 
 # Getting started with the log part
 
@@ -71,13 +74,14 @@ print("RODA O FIMO")
 
 # gff_file, gtf_file, bed_file, track_name, desc
 print("CRIA BED")
+# FAZER INTERSECT FIMO_GTF COM HG19
 gtfgff.bed_generator("outputs/fimo/fimo.txt", GTFFILE, OUTPUTBEDFILE, "TRACK", "DESC") # FIMO GTF INTERSECT
 
-#print("FAZ INTERSECT DO FIMO COM GTF")
-#print("FAZ INTERSECT DO FIMO_GTF COM HG19")
-#print("FAZ INTERSECT DO BED(FIMO_GTF) COM HG19")
+print("FAZ INTERSECT DO BED(FIMO_GTF) COM HG19")
+a = pybedtools.BedTools(OUTPUTBEDFILE)
+b = pybedtools.BedTools(HG19FILE)
+
+b.interesct(a) # FAZER INTERSECT GTF_BED COM HG19
 
 
-# FAZER INTERSECT FIMO_GTF COM HG19
-# FAZER INTERSECT GTF_BED COM HG19
 # CRIAR PANDAS PARA COMPARACAO ENTRE AMBOS
