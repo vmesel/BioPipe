@@ -35,4 +35,8 @@ RUN mkdir /BioPipe
 ADD /BioPipe /BioPipe/
 RUN wget https://bootstrap.pypa.io/get-pip.py
 RUN python get-pip.py
+RUN apt-get -y install python-dev libxml2-dev libxslt-dev python3 vim
 RUN python -m pip install -r /BioPipe/requirements.txt
+RUN wget -O /usr/bin/gtftobedpython3 https://gist.githubusercontent.com/davidliwei/1155568/raw/b1799570a5c57c62667213567658dbe4869bdc44/gtf2bed.py
+RUN chmod +x /usr/bin/gtftobedpython3
+#docker run --name PipeRunner -v /home/vinicius/BigWig/:/shared_folder/ -i -t --entrypoint /bin/bash

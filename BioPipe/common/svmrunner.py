@@ -20,7 +20,7 @@ def ClassificadorSVM(filename, validationnum, classeDiferencial):
     features = [f for f in train.columns.values if f != "FILE"]
 
     #Cria o classificador
-    classificador = svm.SVC(kernel="linear")
+    classificador = svm.LinearSVC()
 
     classificador.fit(train[features],  train["FILE"])
 
@@ -29,7 +29,7 @@ def ClassificadorSVM(filename, validationnum, classeDiferencial):
     #score = classificador.score(test[features], test["FILE"])
     #scorezin = cross_val_score(classificador, df[features][:], df['FILE'][:], cv=5, scoring='f1')
     #print "SVM - Score:" + str(score)
-    #print "SVM - F1 Score:" + str(scorezin)
+    #print "SVM - F1 Score:" + str(scorezin.mean())
 
     return pddf
 
@@ -42,14 +42,12 @@ def RodaValidacoes(inputfile, repeticoes, kmer, classeDiferencial, outputfile):
     features = dfwithfile.columns.values
 
     kmerdf['Features'] = features
-    reps = int(repeticoes) - 1
-    for i in range(reps):
+    #reps = int(repeticoes) - 1
+    for i in range(repeticoes):
         kmerdf[i] = ClassificadorSVM(inputfile, i, classeDiferencial)[i]
 
-    print("Calculando a media")
+    #print("Calculando a media")
     kmerdf["MEDIA"] = kmerdf.mean(axis=1)
-    print kmerdf
+    #print kmerdf
     kmerdf.to_csv(outputfile, index=False, sep='\t')
-
-
-
+    return True

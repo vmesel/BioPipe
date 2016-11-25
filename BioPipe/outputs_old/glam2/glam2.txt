@@ -1,0 +1,148 @@
+GLAM2: Gapped Local Alignment of Motifs
+Version 1056
+
+glam2 -o outputs/glam2/ n outputs/seqs_fasta_atualizado.fasta
+Sequences: 4
+Greatest sequence length: 2
+Residue counts: a=3 c=3 g=2 t=0 N=0
+
+Score: 0.128161  Columns: 2  Sequences: 2
+
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+
+               aa
+                c
+
+ a  c  g  t Del Ins Score
+ 2  0  0  0   0      0.989
+                  0 -0.0429
+ 1  1  0  0   0     -0.818
+
+Score: 0.128161  Columns: 2  Sequences: 2
+
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+
+               aa
+                c
+
+ a  c  g  t Del Ins Score
+ 2  0  0  0   0      0.989
+                  0 -0.0429
+ 1  1  0  0   0     -0.818
+
+Score: 0.128161  Columns: 2  Sequences: 2
+
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+
+               aa
+                c
+
+ a  c  g  t Del Ins Score
+ 2  0  0  0   0      0.989
+                  0 -0.0429
+ 1  1  0  0   0     -0.818
+
+Score: 0.128161  Columns: 2  Sequences: 2
+
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+
+               aa
+                c
+
+ a  c  g  t Del Ins Score
+ 2  0  0  0   0      0.989
+                  0 -0.0429
+ 1  1  0  0   0     -0.818
+
+Score: 0.128161  Columns: 2  Sequences: 2
+
+               **
+kmer_AC      1 ac 2 + 0.298
+kmer_CC      1 cc 2 + 0.298
+
+               ac
+               c 
+
+ a  c  g  t Del Ins Score
+ 1  1  0  0   0     -0.818
+                  0 -0.0429
+ 0  2  0  0   0      0.989
+
+Score: 0.128161  Columns: 2  Sequences: 2
+
+               **
+kmer_AC      1 ac 2 + 0.298
+kmer_CC      1 cc 2 + 0.298
+
+               ac
+               c 
+
+ a  c  g  t Del Ins Score
+ 1  1  0  0   0     -0.818
+                  0 -0.0429
+ 0  2  0  0   0      0.989
+
+Score: 0.128161  Columns: 2  Sequences: 2
+
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+
+               aa
+                c
+
+ a  c  g  t Del Ins Score
+ 2  0  0  0   0      0.989
+                  0 -0.0429
+ 1  1  0  0   0     -0.818
+
+Score: 0.128161  Columns: 2  Sequences: 2
+
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+
+               aa
+                c
+
+ a  c  g  t Del Ins Score
+ 2  0  0  0   0      0.989
+                  0 -0.0429
+ 1  1  0  0   0     -0.818
+
+Score: 0.128161  Columns: 2  Sequences: 2
+
+               **
+kmer_AC      1 ac 2 + 0.298
+kmer_CC      1 cc 2 + 0.298
+
+               ac
+               c 
+
+ a  c  g  t Del Ins Score
+ 1  1  0  0   0     -0.818
+                  0 -0.0429
+ 0  2  0  0   0      0.989
+
+Score: 0.128161  Columns: 2  Sequences: 2
+
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+
+               aa
+                c
+
+ a  c  g  t Del Ins Score
+ 2  0  0  0   0      0.989
+                  0 -0.0429
+ 1  1  0  0   0     -0.818
+

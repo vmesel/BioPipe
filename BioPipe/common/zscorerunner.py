@@ -8,6 +8,8 @@ def RunZScoreAlgorithm(filename, separator):
     a = pd.read_csv(filename, sep=separator)
     a["zscore_mean"] = zscore(a["MEDIA"].values)
     print("CALCULA ZSCORE")
+    filename2 = filename + str("-zscore")
+    a.to_csv(filename2)
     return a
 
 def RemoveTargetZScores(filename, separator, target):

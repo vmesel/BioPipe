@@ -91,7 +91,6 @@ class FileProcessor:
         return df4.to_csv(file1 + "-" + file2 + "-kmers" + str(kn) + "-samples-" + str(samplenum) + ".csv", index=False)
 
     def DataframeConcatenate(self, file1, file2, kn):
-        print("CONCATENATING")
         df1 = FileProcessor().DataFrameLncRNA(file1, kn)
         df2 = FileProcessor().DataFrameLncRNA(file2, kn)
         df3 = pd.concat([df1, df2])

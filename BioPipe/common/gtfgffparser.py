@@ -117,4 +117,4 @@ def _get_value(value):
     elif value in ['', '.', 'NA']:
         return None
 
-return value
+    return value

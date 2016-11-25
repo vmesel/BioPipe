@@ -1,0 +1,265 @@
+<html>
+<head>
+<title>GLAM2</title>
+<style type="text/css">
+body {background: #D5F0FF}
+th {text-align: left}
+td.kk {font-family: monospace; font-weight: bold}
+td.jj {font-family: monospace; color: gray}
+td.a {color: red}
+td.c {color: blue}
+td.g {color: orange}
+td.t {color: green}
+</style>
+</head>
+<body>
+<h1>GLAM2: Gapped Local Alignment of Motifs</h1>
+<p style="font-family: monospace"> Version 1056
+<br> glam2 -o outputs/glam2/ n outputs/seqs_fasta_atualizado.fasta
+</p>
+<p>If you use this program in your research, please cite:<b> MC Frith, NFW Saunders, B Kobe, TL Bailey, &quot;Discovering sequence motifs with arbitrary insertions and deletions&quot;, PLoS Computational Biology, <b>4</b>(5):e1000071, 2008.<a href="http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1000071">[full text]</a></b></p>
+<form enctype="application/x-www-form-urlencoded" method="POST" target="_new" action="http://meme-suite.org/utilities/process_request">
+<ul>
+</ul>
+<input type="hidden" name="-o" value="outputs/glam2/">
+<input type="hidden" name="alphabet" value="n">
+<input type="hidden" name="seq_file" value="outputs/seqs_fasta_atualizado.fasta">
+<h2>Best Motif Found:</h2>
+<table>
+<tr>
+<th style="padding-right: 1em">NAME</th>
+<th style="padding-right: 1em">START</th>
+<th style="text-align: center" colspan=" 2 ">SITES</th>
+<th style="padding-left: 1em">END</th>
+<th style="padding-left: 1em">STRAND</th>
+<th style="padding-left: 1em">MARGINAL SCORE</th>
+</tr>
+<tbody>
+<tr>
+<td style="padding-right: 1em"> kmer_AA </td>
+<td style="padding-right: 1em;text-align: right"> 1 </td>
+<td class="kk a "> a </td>
+<td class="kk a "> a </td>
+<td style="padding-left: 1em;text-align: right"> 2 </td>
+<td style="padding-left: 1em;text-align: center"> + </td>
+<td style="padding-left: 1em"> 0.298 </td>
+</tr>
+<tr>
+<td style="padding-right: 1em"> kmer_AC </td>
+<td style="padding-right: 1em;text-align: right"> 1 </td>
+<td class="kk a "> a </td>
+<td class="kk c "> c </td>
+<td style="padding-left: 1em;text-align: right"> 2 </td>
+<td style="padding-left: 1em;text-align: center"> + </td>
+<td style="padding-left: 1em"> 0.298 </td>
+</tr>
+</tbody>
+</table>
+<table> <tr> <td> Score: <b> 0.128161 </b></td>
+<td rowspan=2><img src="logo1.png"></td></tr>
+<tr><th><a href="logo_ssc1.png">logo with ssc</a></td></tr></table>
+<input type="submit" name="action" value="Scan alignment 1"><b> against sequence databases using <a href="http://meme-suite.org/doc/glam2scan.html">GLAM2SCAN.</a></b>
+<input type="hidden" name="aln1" value=".
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+.">
+<br><input type="submit" name="action" value="View alignment 1">
+<input type="hidden" name="pspm1" value="
+letter-probability matrix: alength= 4  w= 2 nsites= 2 E= 1
+1.0  0.0  0.0  0.0 
+0.5  0.5  0.0  0.0 
+">
+<input type="submit" name="action" value="View PSPM 1">
+<br><input type="submit" name="action" value="Compare PSPM 1"><b> to known motifs in motif databases using <a href="http://meme-suite.org/doc/tomtom.html">Tomtom</a>.</b>
+<br><i>Regular Expression for Motif: </i>
+<b> a[ac] </b>
+<br>
+<h2>Replicates:</h2>
+<p>Check that at least some of these are similar to the best motif found.<br>If not, there may well be an even better motif.<BR>Click here to 
+re-run GLAM2
+with double the "maximum number of iterations without improvement" to find it.</p>
+<p>
+<table> <tr> <td> Score: <b> 0.128161 </b></td>
+<td rowspan=2><img src="logo2.png"></td></tr>
+<tr><th><a href="logo_ssc2.png">logo with ssc</a></td></tr></table>
+<input type="submit" name="action" value="Scan alignment 2"><b> against sequence databases using <a href="http://meme-suite.org/doc/glam2scan.html">GLAM2SCAN.</a></b>
+<input type="hidden" name="aln2" value=".
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+.">
+<br><input type="submit" name="action" value="View alignment 2">
+<input type="hidden" name="pspm2" value="
+letter-probability matrix: alength= 4  w= 2 nsites= 2 E= 1
+1.0  0.0  0.0  0.0 
+0.5  0.5  0.0  0.0 
+">
+<input type="submit" name="action" value="View PSPM 2">
+<br><input type="submit" name="action" value="Compare PSPM 2"><b> to known motifs in motif databases using <a href="http://meme-suite.org/doc/tomtom.html">Tomtom</a>.</b>
+<br><i>Regular Expression for Motif: </i>
+<b> a[ac] </b>
+<br>
+<table> <tr> <td> Score: <b> 0.128161 </b></td>
+<td rowspan=2><img src="logo3.png"></td></tr>
+<tr><th><a href="logo_ssc3.png">logo with ssc</a></td></tr></table>
+<input type="submit" name="action" value="Scan alignment 3"><b> against sequence databases using <a href="http://meme-suite.org/doc/glam2scan.html">GLAM2SCAN.</a></b>
+<input type="hidden" name="aln3" value=".
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+.">
+<br><input type="submit" name="action" value="View alignment 3">
+<input type="hidden" name="pspm3" value="
+letter-probability matrix: alength= 4  w= 2 nsites= 2 E= 1
+1.0  0.0  0.0  0.0 
+0.5  0.5  0.0  0.0 
+">
+<input type="submit" name="action" value="View PSPM 3">
+<br><input type="submit" name="action" value="Compare PSPM 3"><b> to known motifs in motif databases using <a href="http://meme-suite.org/doc/tomtom.html">Tomtom</a>.</b>
+<br><i>Regular Expression for Motif: </i>
+<b> a[ac] </b>
+<br>
+<table> <tr> <td> Score: <b> 0.128161 </b></td>
+<td rowspan=2><img src="logo4.png"></td></tr>
+<tr><th><a href="logo_ssc4.png">logo with ssc</a></td></tr></table>
+<input type="submit" name="action" value="Scan alignment 4"><b> against sequence databases using <a href="http://meme-suite.org/doc/glam2scan.html">GLAM2SCAN.</a></b>
+<input type="hidden" name="aln4" value=".
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+.">
+<br><input type="submit" name="action" value="View alignment 4">
+<input type="hidden" name="pspm4" value="
+letter-probability matrix: alength= 4  w= 2 nsites= 2 E= 1
+1.0  0.0  0.0  0.0 
+0.5  0.5  0.0  0.0 
+">
+<input type="submit" name="action" value="View PSPM 4">
+<br><input type="submit" name="action" value="Compare PSPM 4"><b> to known motifs in motif databases using <a href="http://meme-suite.org/doc/tomtom.html">Tomtom</a>.</b>
+<br><i>Regular Expression for Motif: </i>
+<b> a[ac] </b>
+<br>
+<table> <tr> <td> Score: <b> 0.128161 </b></td>
+<td rowspan=2><img src="logo5.png"></td></tr>
+<tr><th><a href="logo_ssc5.png">logo with ssc</a></td></tr></table>
+<input type="submit" name="action" value="Scan alignment 5"><b> against sequence databases using <a href="http://meme-suite.org/doc/glam2scan.html">GLAM2SCAN.</a></b>
+<input type="hidden" name="aln5" value=".
+               **
+kmer_AC      1 ac 2 + 0.298
+kmer_CC      1 cc 2 + 0.298
+.">
+<br><input type="submit" name="action" value="View alignment 5">
+<input type="hidden" name="pspm5" value="
+letter-probability matrix: alength= 4  w= 2 nsites= 2 E= 1
+0.5  0.5  0.0  0.0 
+0.0  1.0  0.0  0.0 
+">
+<input type="submit" name="action" value="View PSPM 5">
+<br><input type="submit" name="action" value="Compare PSPM 5"><b> to known motifs in motif databases using <a href="http://meme-suite.org/doc/tomtom.html">Tomtom</a>.</b>
+<br><i>Regular Expression for Motif: </i>
+<b> [ac]c </b>
+<br>
+<table> <tr> <td> Score: <b> 0.128161 </b></td>
+<td rowspan=2><img src="logo6.png"></td></tr>
+<tr><th><a href="logo_ssc6.png">logo with ssc</a></td></tr></table>
+<input type="submit" name="action" value="Scan alignment 6"><b> against sequence databases using <a href="http://meme-suite.org/doc/glam2scan.html">GLAM2SCAN.</a></b>
+<input type="hidden" name="aln6" value=".
+               **
+kmer_AC      1 ac 2 + 0.298
+kmer_CC      1 cc 2 + 0.298
+.">
+<br><input type="submit" name="action" value="View alignment 6">
+<input type="hidden" name="pspm6" value="
+letter-probability matrix: alength= 4  w= 2 nsites= 2 E= 1
+0.5  0.5  0.0  0.0 
+0.0  1.0  0.0  0.0 
+">
+<input type="submit" name="action" value="View PSPM 6">
+<br><input type="submit" name="action" value="Compare PSPM 6"><b> to known motifs in motif databases using <a href="http://meme-suite.org/doc/tomtom.html">Tomtom</a>.</b>
+<br><i>Regular Expression for Motif: </i>
+<b> [ac]c </b>
+<br>
+<table> <tr> <td> Score: <b> 0.128161 </b></td>
+<td rowspan=2><img src="logo7.png"></td></tr>
+<tr><th><a href="logo_ssc7.png">logo with ssc</a></td></tr></table>
+<input type="submit" name="action" value="Scan alignment 7"><b> against sequence databases using <a href="http://meme-suite.org/doc/glam2scan.html">GLAM2SCAN.</a></b>
+<input type="hidden" name="aln7" value=".
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+.">
+<br><input type="submit" name="action" value="View alignment 7">
+<input type="hidden" name="pspm7" value="
+letter-probability matrix: alength= 4  w= 2 nsites= 2 E= 1
+1.0  0.0  0.0  0.0 
+0.5  0.5  0.0  0.0 
+">
+<input type="submit" name="action" value="View PSPM 7">
+<br><input type="submit" name="action" value="Compare PSPM 7"><b> to known motifs in motif databases using <a href="http://meme-suite.org/doc/tomtom.html">Tomtom</a>.</b>
+<br><i>Regular Expression for Motif: </i>
+<b> a[ac] </b>
+<br>
+<table> <tr> <td> Score: <b> 0.128161 </b></td>
+<td rowspan=2><img src="logo8.png"></td></tr>
+<tr><th><a href="logo_ssc8.png">logo with ssc</a></td></tr></table>
+<input type="submit" name="action" value="Scan alignment 8"><b> against sequence databases using <a href="http://meme-suite.org/doc/glam2scan.html">GLAM2SCAN.</a></b>
+<input type="hidden" name="aln8" value=".
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+.">
+<br><input type="submit" name="action" value="View alignment 8">
+<input type="hidden" name="pspm8" value="
+letter-probability matrix: alength= 4  w= 2 nsites= 2 E= 1
+1.0  0.0  0.0  0.0 
+0.5  0.5  0.0  0.0 
+">
+<input type="submit" name="action" value="View PSPM 8">
+<br><input type="submit" name="action" value="Compare PSPM 8"><b> to known motifs in motif databases using <a href="http://meme-suite.org/doc/tomtom.html">Tomtom</a>.</b>
+<br><i>Regular Expression for Motif: </i>
+<b> a[ac] </b>
+<br>
+<table> <tr> <td> Score: <b> 0.128161 </b></td>
+<td rowspan=2><img src="logo9.png"></td></tr>
+<tr><th><a href="logo_ssc9.png">logo with ssc</a></td></tr></table>
+<input type="submit" name="action" value="Scan alignment 9"><b> against sequence databases using <a href="http://meme-suite.org/doc/glam2scan.html">GLAM2SCAN.</a></b>
+<input type="hidden" name="aln9" value=".
+               **
+kmer_AC      1 ac 2 + 0.298
+kmer_CC      1 cc 2 + 0.298
+.">
+<br><input type="submit" name="action" value="View alignment 9">
+<input type="hidden" name="pspm9" value="
+letter-probability matrix: alength= 4  w= 2 nsites= 2 E= 1
+0.5  0.5  0.0  0.0 
+0.0  1.0  0.0  0.0 
+">
+<input type="submit" name="action" value="View PSPM 9">
+<br><input type="submit" name="action" value="Compare PSPM 9"><b> to known motifs in motif databases using <a href="http://meme-suite.org/doc/tomtom.html">Tomtom</a>.</b>
+<br><i>Regular Expression for Motif: </i>
+<b> [ac]c </b>
+<br>
+<table> <tr> <td> Score: <b> 0.128161 </b></td>
+<td rowspan=2><img src="logo10.png"></td></tr>
+<tr><th><a href="logo_ssc10.png">logo with ssc</a></td></tr></table>
+<input type="submit" name="action" value="Scan alignment 10"><b> against sequence databases using <a href="http://meme-suite.org/doc/glam2scan.html">GLAM2SCAN.</a></b>
+<input type="hidden" name="aln10" value=".
+               **
+kmer_AA      1 aa 2 + 0.298
+kmer_AC      1 ac 2 + 0.298
+.">
+<br><input type="submit" name="action" value="View alignment 10">
+<input type="hidden" name="pspm10" value="
+letter-probability matrix: alength= 4  w= 2 nsites= 2 E= 1
+1.0  0.0  0.0  0.0 
+0.5  0.5  0.0  0.0 
+">
+<input type="submit" name="action" value="View PSPM 10">
+<br><input type="submit" name="action" value="Compare PSPM 10"><b> to known motifs in motif databases using <a href="http://meme-suite.org/doc/tomtom.html">Tomtom</a>.</b>
+<br><i>Regular Expression for Motif: </i>
+<b> a[ac] </b>
+<br>
+</p>
+</form></body>
+</html>
